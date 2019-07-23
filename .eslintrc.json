@@ -1,0 +1,30 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "rules": {
+    "prettier/prettier": "error",
+
+    // Lets us use anonymous functions
+    // https://eslint.org/docs/rules/func-name-matching#require-function-names-to-match-the-name-of-the-variable-or-property-to-which-they-are-assigned-func-name-matching
+    "func-names": "off",
+
+    // https://eslint.org/docs/rules/object-shorthand#require-object-literal-shorthand-syntax-object-shorthand
+    "object-shorthand": "off",
+
+    // https://eslint.org/docs/rules/class-methods-use-this#enforce-that-class-methods-utilize-this-class-methods-use-this
+    "class-methods-use-this": "off"
+  }
+}
